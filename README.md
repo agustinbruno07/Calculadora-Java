@@ -1,10 +1,8 @@
-### Esta ayuda nos la proporciono el grupo de Linzalata Julian, ya que nosotros no sabiamos anteriormente como trabajar en conjunto con otras personas.
+
 ### El grupo esta formado por:
 ### -Agustin Bruno
 ### -Guillermo Bordoli
 ### -Santino Fierro
-###  **Los Diagramas lo puede encontrar en este link que le va a dirigir a una carpeta de drive, con todos los diagramas:**
-### -https://drive.google.com/drive/folders/1cJDeV4Auxk4G91R91F9aRGnMfJ_1u-Pe?usp=sharing
 # 🧑‍💻 PARTE 1 – Acciones en GitHub
 
 ### ✅ 1. Aceptar la invitación
