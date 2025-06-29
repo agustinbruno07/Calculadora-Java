@@ -35,6 +35,8 @@ public class calculadora extends JFrame implements ActionListener {
 	private JButton btnClear;
 	private JButton btnIGUAL;
 	private JLabel lblTitulo;
+	private JButton btnPunto;
+	
 	//variables
 	String memoria1="";
 	String memoria2="";
@@ -51,7 +53,7 @@ public class calculadora extends JFrame implements ActionListener {
 	
 	public calculadora() {
 		setResizable(false);
-		setSize(500,500);
+		setSize(1920,1080);
 		setTitle("Guillermo-Agustin-Santino");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setLocationRelativeTo(null);
@@ -74,131 +76,141 @@ public class calculadora extends JFrame implements ActionListener {
 	    cardPanel.add(panelEcuaciones, "ecuaciones");
 	   
 	    ingresarTexto= new JTextField();
+	    ingresarTexto.setBackground(Color.WHITE);
 	    ingresarTexto.setFont(new Font("Arial", Font.PLAIN, 12));
-	    ingresarTexto.setBounds(108, 52, 228, 39);
+	    ingresarTexto.setBounds(531, 238, 237, 39);
 	    ingresarTexto.setColumns(10);
 	    panelCalculadora.add(ingresarTexto);
 	
 		
 		btnSuma = new JButton("+");
 		btnSuma.addActionListener(this);
-		btnSuma.setBounds(279, 259, 57, 27);
+		btnSuma.setBounds(701, 407, 67, 27);
 		panelCalculadora.add(btnSuma);
 		
-		btnResta = new JButton("   -");
+		btnResta = new JButton("     -");
 		btnResta.addActionListener(this);
 		btnResta.setHorizontalAlignment(SwingConstants.LEFT);
-		btnResta.setBounds(279, 221, 57, 27);
+		btnResta.setBounds(701, 367, 67, 27);
 		panelCalculadora.add(btnResta);
 		
 		btnMult = new JButton("X");
 		btnMult.addActionListener(this);
-		btnMult.setBounds(279, 143, 57, 27);
+		btnMult.setBounds(701, 288, 67, 27);
 		panelCalculadora.add(btnMult);
 		
 		btnDiv = new JButton("/");
 		btnDiv.addActionListener(this);
-		btnDiv.setBounds(279, 181, 57, 27);
+		btnDiv.setBounds(701, 329, 67, 27);
 		panelCalculadora.add(btnDiv);
 		
 		btnRaiz = new JButton("√");
 		btnRaiz.addActionListener(this);
-		btnRaiz.setBounds(108, 102, 79, 27);
+		btnRaiz.setBounds(531, 288, 51, 27);
 		panelCalculadora.add(btnRaiz);
 		
-		 btnPotencia = new JButton("^");
+		btnPotencia = new JButton("^");
 		btnPotencia.addActionListener(this);
-		btnPotencia.setBounds(197, 102, 75, 27);
+		btnPotencia.setBounds(588, 288, 51, 27);
 		panelCalculadora.add(btnPotencia);
 		
 		JButton btnVectores = new JButton("Trabajar con Vectores");
+		btnVectores.setBackground(Color.WHITE);
 		btnVectores.addActionListener(e -> cardLayout.show(cardPanel, "vectores"));
 		btnVectores.setForeground(Color.BLACK);
-		btnVectores.setBounds(140, 307, 179, 23);
+		btnVectores.setBounds(514, 483, 266, 23);
 		panelCalculadora.add(btnVectores);
 		
 		JButton  btnMatrices = new JButton("Trabajar con Matrices");
+		btnMatrices.setBackground(Color.WHITE);
 		btnMatrices.addActionListener(e -> cardLayout.show(cardPanel, "matrices"));;
-		btnMatrices.setBounds(140, 341, 179, 23);
+		btnMatrices.setBounds(514, 517, 266, 23);
 		panelCalculadora.add(btnMatrices);
 		
-		JButton btnEcuaciones = new JButton("Trabajar con Ecuaciones");
+		JButton btnEcuaciones = new JButton("Trabajar con Sistemas de Ecuaciones");
+		btnEcuaciones.setBackground(Color.WHITE);
 		btnEcuaciones.addActionListener(e -> cardLayout.show(cardPanel, "ecuaciones"));
-		btnEcuaciones.setBounds(140, 375, 179, 23);
+		btnEcuaciones.setBounds(514, 551, 266, 23);
 		panelCalculadora.add(btnEcuaciones);
 		
 		btnUno = new JButton("1");
 		btnUno.addActionListener(this);
-		btnUno.setBounds(108, 143, 51, 27);
+		btnUno.setBounds(531, 329, 51, 27);
 		panelCalculadora.add(btnUno);
 		
 		btnDos = new JButton("2");
 		btnDos.addActionListener(this);
-		btnDos.setBounds(165, 143, 51, 27);
+		btnDos.setBounds(588, 329, 51, 27);
 		panelCalculadora.add(btnDos);
 		
 	
 		btnCuatro = new JButton("4");
 		btnCuatro.addActionListener(this);
-		btnCuatro.setBounds(108, 181, 51, 27);
+		btnCuatro.setBounds(531, 367, 51, 27);
 		panelCalculadora.add(btnCuatro);
 		
 		btnTres = new JButton("3");
 		btnTres.addActionListener(this);
-		btnTres.setBounds(221, 143, 51, 27);
+		btnTres.setBounds(644, 329, 51, 27);
 		panelCalculadora.add(btnTres);
 		
 		btnCinco = new JButton("5");
 		btnCinco.addActionListener(this);
-		btnCinco.setBounds(165, 181, 51, 27);
+		btnCinco.setBounds(588, 367, 51, 27);
 		panelCalculadora.add(btnCinco);
 		
 		btnSeis = new JButton("6");
 		btnSeis.addActionListener(this);
-		btnSeis.setBounds(221, 181, 51, 27);
+		btnSeis.setBounds(644, 367, 51, 27);
 		panelCalculadora.add(btnSeis);
 		
 		btnSiete = new JButton("7");
 		btnSiete.addActionListener(this);
-		btnSiete.setBounds(108, 221, 51, 27);
+		btnSiete.setBounds(531, 407, 51, 27);
 		panelCalculadora.add(btnSiete);
 		
 		btnOcho = new JButton("8");
 		btnOcho.addActionListener(this);
-		btnOcho.setBounds(165, 221, 51, 27);
+		btnOcho.setBounds(588, 407, 51, 27);
 		panelCalculadora.add(btnOcho);
 		
 		btnNueve = new JButton("9");
 		btnNueve.addActionListener(this);
-		btnNueve.setBounds(221, 221, 51, 27);
+		btnNueve.setBounds(644, 407, 51, 27);
 		panelCalculadora.add(btnNueve);
 		
 		btnIGUAL = new JButton("=");
 		btnIGUAL.addActionListener(this);
 		btnIGUAL.setForeground(Color.BLACK);
-		btnIGUAL.setBounds(108, 259, 108, 27);
+		btnIGUAL.setBounds(644, 445, 124, 27);
 		panelCalculadora.add(btnIGUAL);
 		
 		btnClear = new JButton("C");
 		btnClear.addActionListener(this);
-		btnClear.setBounds(279, 102, 57, 27);
+		btnClear.setBounds(644, 288, 51, 27);
 		panelCalculadora.add(btnClear);
 		
 		lblTitulo = new JLabel("GAS-LATOR");
 		lblTitulo.setForeground(Color.WHITE);
 		lblTitulo.setFont(new Font("Comic Sans MS", Font.BOLD | Font.ITALIC, 20));
-		lblTitulo.setBounds(159, -5, 137, 46);
+		lblTitulo.setBounds(582, 181, 137, 46);
 		panelCalculadora.add(lblTitulo);
 		
 		btnCero = new JButton("0");
 		btnCero.addActionListener(this);
-		btnCero.setBounds(221, 259, 51, 27);
+		btnCero.setBounds(531, 445, 51, 27);
 		panelCalculadora.add(btnCero);
+		
+		btnPunto = new JButton(".");
+		btnPunto.addActionListener(this);
+		btnPunto.setFont(new Font("Arial", Font.BOLD, 16));
+		btnPunto.setBounds(588, 445, 51, 27);
+		panelCalculadora.add(btnPunto);
 	}
 
 
 	public void actionPerformed(ActionEvent e) {
-	
+	   
 		if(e.getSource() == btnUno) {
 	        ingresarTexto.setText(ingresarTexto.getText() + "1");
 	    }
@@ -221,16 +233,18 @@ public class calculadora extends JFrame implements ActionListener {
 	        ingresarTexto.setText(ingresarTexto.getText() + "7");
 	    }
 	    else if(e.getSource() == btnOcho) {
-	        ingresarTexto.setText("8");
+	        ingresarTexto.setText(ingresarTexto.getText() + "8");
 	    }
 	    else if(e.getSource() == btnNueve) {
 	        ingresarTexto.setText(ingresarTexto.getText() + "9");
 	    }
 	    else if(e.getSource() == btnCero) {
 	        ingresarTexto.setText(ingresarTexto.getText() + "0");
+	    } 
+	    else if(e.getSource() == btnPunto) {
+             ingresarTexto.setText(ingresarTexto.getText() + ".");
 	    }
 		
-
 	    else if(e.getSource() == btnSuma) {
 	        if(!ingresarTexto.getText().isEmpty()) {
 	            signo = "Suma";
@@ -253,7 +267,9 @@ public class calculadora extends JFrame implements ActionListener {
 	            memoria1 = ingresarTexto.getText();
 	            numero1 = Float.parseFloat(memoria1);
 	            ingresarTexto.setText("");
-	        }
+	        }else {
+	        	 ingresarTexto.setText("Error");
+	        }	
 	    }
 	    else if(e.getSource() == btnDiv) {
 	        if(!ingresarTexto.getText().isEmpty()) {
@@ -261,7 +277,9 @@ public class calculadora extends JFrame implements ActionListener {
 	            memoria1 = ingresarTexto.getText();
 	            numero1 = Float.parseFloat(memoria1);
 	            ingresarTexto.setText("");
-	        }
+	        }else {
+	        	 ingresarTexto.setText("Error");
+	        }	
 	    }
 	   
 	    else if(e.getSource() == btnPotencia) {  
@@ -270,7 +288,9 @@ public class calculadora extends JFrame implements ActionListener {
 	            memoria1 = ingresarTexto.getText();
 	            numero1 = Float.parseFloat(memoria1);
 	            ingresarTexto.setText("");
-	        }
+	        }else {
+	        	 ingresarTexto.setText("Error");
+	        }	
 	    }
 	    
 	    	else if(e.getSource() == btnRaiz) {
@@ -369,4 +389,3 @@ public class calculadora extends JFrame implements ActionListener {
 	    }
 	}
 }
-
