@@ -25,42 +25,42 @@ public class multiplicacionMatrices extends JPanel {
 
         JLabel lblFilas1 = new JLabel("Filas Matriz 1:");
         lblFilas1.setForeground(Color.WHITE);
-        lblFilas1.setBounds(779, 53, 150, 25);
+        lblFilas1.setBounds(351, 14, 150, 25);
         add(lblFilas1);
 
         txtFilas1 = new JTextField();
-        txtFilas1.setBounds(929, 53, 100, 25);
+        txtFilas1.setBounds(501, 14, 100, 25);
         add(txtFilas1);
 
         JLabel lblColumnas1 = new JLabel("Columnas Matriz 1:");
         lblColumnas1.setForeground(Color.WHITE);
-        lblColumnas1.setBounds(779, 103, 150, 25);
+        lblColumnas1.setBounds(351, 50, 150, 25);
         add(lblColumnas1);
 
         txtColumnas1 = new JTextField();
-        txtColumnas1.setBounds(929, 103, 100, 25);
+        txtColumnas1.setBounds(501, 50, 100, 25);
         add(txtColumnas1);
 
         JLabel lblFilas2 = new JLabel("Filas Matriz 2:");
         lblFilas2.setForeground(Color.WHITE);
-        lblFilas2.setBounds(779, 153, 150, 25);
+        lblFilas2.setBounds(351, 88, 150, 25);
         add(lblFilas2);
 
         txtFilas2 = new JTextField();
-        txtFilas2.setBounds(929, 153, 100, 25);
+        txtFilas2.setBounds(501, 88, 100, 25);
         add(txtFilas2);
 
         JLabel lblColumnas2 = new JLabel("Columnas Matriz 2:");
         lblColumnas2.setForeground(Color.WHITE);
-        lblColumnas2.setBounds(779, 203, 150, 25);
+        lblColumnas2.setBounds(351, 124, 150, 25);
         add(lblColumnas2);
 
         txtColumnas2 = new JTextField();
-        txtColumnas2.setBounds(929, 203, 100, 25);
+        txtColumnas2.setBounds(501, 124, 100, 25);
         add(txtColumnas2);
 
         JButton btnGenerar = new JButton("Generar Matrices");
-        btnGenerar.setBounds(779, 253, 200, 25);
+        btnGenerar.setBounds(351, 149, 200, 25);
         btnGenerar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 generarCampos();
@@ -70,36 +70,36 @@ public class multiplicacionMatrices extends JPanel {
 
         JLabel lblMatriz1 = new JLabel("Matriz 1");
         lblMatriz1.setForeground(Color.WHITE);
-        lblMatriz1.setBounds(1200, 303, 100, 25);
+        lblMatriz1.setBounds(352, 177, 100, 25);
         add(lblMatriz1);
 
         panelMatriz1 = new JPanel();
         panelMatriz1.setLayout(null);
-        panelMatriz1.setBounds(779, 303, 400, 200);
+        panelMatriz1.setBounds(352, 197, 400, 200);
         add(panelMatriz1);
 
         JLabel lblMatriz2 = new JLabel("Matriz 2");
         lblMatriz2.setForeground(Color.WHITE);
-        lblMatriz2.setBounds(1200, 513, 100, 25);
+        lblMatriz2.setBounds(351, 399, 100, 25);
         add(lblMatriz2);
 
         panelMatriz2 = new JPanel();
         panelMatriz2.setLayout(null);
-        panelMatriz2.setBounds(779, 513, 400, 200);
+        panelMatriz2.setBounds(351, 415, 400, 200);
         add(panelMatriz2);
 
         JLabel lblResultado = new JLabel("Resultado");
         lblResultado.setForeground(Color.WHITE);
-        lblResultado.setBounds(1200, 723, 100, 25);
+        lblResultado.setBounds(762, 177, 100, 25);
         add(lblResultado);
 
         panelResultado = new JPanel();
         panelResultado.setLayout(null);
-        panelResultado.setBounds(779, 723, 400, 200);
+        panelResultado.setBounds(762, 197, 400, 200);
         add(panelResultado);
 
         JButton btnMultiplicar = new JButton("Multiplicar");
-        btnMultiplicar.setBounds(779, 953, 200, 25);
+        btnMultiplicar.setBounds(351, 626, 132, 25);
         btnMultiplicar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 multiplicarMatrices();
@@ -108,7 +108,7 @@ public class multiplicacionMatrices extends JPanel {
         add(btnMultiplicar);
 
         JButton btnVolver = new JButton("Volver");
-        btnVolver.setBounds(1029, 953, 200, 25);
+        btnVolver.setBounds(641, 626, 110, 25);
         btnVolver.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Container papa = getParent();
@@ -119,7 +119,7 @@ public class multiplicacionMatrices extends JPanel {
         add(btnVolver);
 
         JButton btnAns = new JButton("Ans");
-        btnAns.setBounds(779, 1003, 200, 25);
+        btnAns.setBounds(493, 626, 138, 25);
         btnAns.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 txtAns.setText(ultimoResultado);
@@ -128,7 +128,7 @@ public class multiplicacionMatrices extends JPanel {
         add(btnAns);
 
         txtAns = new JTextField();
-        txtAns.setBounds(1029, 1003, 200, 25);
+        txtAns.setBounds(351, 662, 400, 25);
         txtAns.setEditable(false);
         add(txtAns);
     }

@@ -22,15 +22,15 @@ public class divisionMatrices extends JPanel {
 
         JLabel lblDimension = new JLabel("Dimensión (n x n):");
         lblDimension.setForeground(Color.WHITE);
-        lblDimension.setBounds(782, 28, 150, 25);
+        lblDimension.setBounds(472, 0, 150, 25);
         add(lblDimension);
 
         txtDimension = new JTextField();
-        txtDimension.setBounds(942, 28, 100, 25);
+        txtDimension.setBounds(592, 0, 100, 25);
         add(txtDimension);
 
         JButton btnGenerar = new JButton("Generar Matrices");
-        btnGenerar.setBounds(782, 78, 200, 25);
+        btnGenerar.setBounds(472, 27, 200, 25);
         btnGenerar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -44,22 +44,22 @@ public class divisionMatrices extends JPanel {
 
         JLabel lblMatrizA = new JLabel("Matriz A:");
         lblMatrizA.setForeground(Color.WHITE);
-        lblMatrizA.setBounds(682, 128, 100, 25);
+        lblMatrizA.setBounds(472, 56, 100, 25);
         add(lblMatrizA);
 
         panelMatrizA = new JPanel();
         panelMatrizA.setLayout(null);
-        panelMatrizA.setBounds(782, 128, 400, 400);
+        panelMatrizA.setBounds(472, 82, 400, 275);
         add(panelMatrizA);
 
         JLabel lblMatrizB = new JLabel("Matriz B:");
         lblMatrizB.setForeground(Color.WHITE);
-        lblMatrizB.setBounds(682, 578, 100, 25);
+        lblMatrizB.setBounds(472, 353, 100, 25);
         add(lblMatrizB);
 
         panelMatrizB = new JPanel();
         panelMatrizB.setLayout(null);
-        panelMatrizB.setBounds(782, 578, 400, 400);
+        panelMatrizB.setBounds(472, 389, 400, 259);
         add(panelMatrizB);
 
         JLabel lblResultado = new JLabel("Resultado:");
@@ -69,11 +69,11 @@ public class divisionMatrices extends JPanel {
 
         panelMatrizResultado = new JPanel();
         panelMatrizResultado.setLayout(null);
-        panelMatrizResultado.setBounds(1202, 128, 400, 400);
+        panelMatrizResultado.setBounds(892, 82, 400, 275);
         add(panelMatrizResultado);
 
         JButton btnCalcular = new JButton("Calcular División");
-        btnCalcular.setBounds(782, 998, 200, 25);
+        btnCalcular.setBounds(472, 659, 109, 25);
         btnCalcular.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -86,7 +86,7 @@ public class divisionMatrices extends JPanel {
         add(btnCalcular);
 
         JButton btnAns = new JButton("Ans");
-        btnAns.setBounds(1002, 998, 200, 25);
+        btnAns.setBounds(593, 659, 134, 25);
         btnAns.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 txtAns.setText(ultimoResultado);
@@ -95,12 +95,12 @@ public class divisionMatrices extends JPanel {
         add(btnAns);
 
         txtAns = new JTextField();
-        txtAns.setBounds(1222, 998, 200, 25);
+        txtAns.setBounds(472, 695, 400, 25);
         txtAns.setEditable(false);
         add(txtAns);
 
         JButton btnVolver = new JButton("Volver");
-        btnVolver.setBounds(1442, 998, 200, 25);
+        btnVolver.setBounds(748, 659, 124, 25);
         btnVolver.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Container papa = getParent();
@@ -112,7 +112,7 @@ public class divisionMatrices extends JPanel {
         
         JLabel lblResultado_1 = new JLabel("Resultado:");
         lblResultado_1.setForeground(Color.WHITE);
-        lblResultado_1.setBounds(1202, 92, 100, 25);
+        lblResultado_1.setBounds(892, 46, 100, 25);
         add(lblResultado_1);
     }
 

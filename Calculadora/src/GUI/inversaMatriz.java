@@ -20,15 +20,15 @@ public class inversaMatriz extends JPanel {
 
         JLabel lblDimension = new JLabel("Dimensión (n x n):");
         lblDimension.setForeground(Color.WHITE);
-        lblDimension.setBounds(780, 51, 150, 25);
+        lblDimension.setBounds(506, 12, 150, 25);
         add(lblDimension);
 
         txtDimension = new JTextField();
-        txtDimension.setBounds(940, 51, 100, 25);
+        txtDimension.setBounds(606, 12, 100, 25);
         add(txtDimension);
 
         JButton btnGenerar = new JButton("Generar Matriz");
-        btnGenerar.setBounds(780, 111, 200, 25);
+        btnGenerar.setBounds(506, 48, 200, 25);
         btnGenerar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -42,26 +42,26 @@ public class inversaMatriz extends JPanel {
 
         JLabel lblMatrizOriginal = new JLabel("Matriz:");
         lblMatrizOriginal.setForeground(Color.WHITE);
-        lblMatrizOriginal.setBounds(680, 151, 150, 25);
+        lblMatrizOriginal.setBounds(506, 72, 150, 25);
         add(lblMatrizOriginal);
 
         panelMatrizOriginal = new JPanel();
         panelMatrizOriginal.setLayout(null);
-        panelMatrizOriginal.setBounds(780, 151, 400, 400);
+        panelMatrizOriginal.setBounds(506, 96, 400, 276);
         add(panelMatrizOriginal);
 
         JLabel lblMatrizInversa = new JLabel("Matriz Inversa:");
         lblMatrizInversa.setForeground(Color.WHITE);
-        lblMatrizInversa.setBounds(680, 571, 150, 25);
+        lblMatrizInversa.setBounds(506, 371, 150, 25);
         add(lblMatrizInversa);
 
         panelMatrizInversa = new JPanel();
         panelMatrizInversa.setLayout(null);
-        panelMatrizInversa.setBounds(780, 571, 400, 400);
+        panelMatrizInversa.setBounds(506, 395, 400, 276);
         add(panelMatrizInversa);
 
         JButton btnCalcular = new JButton("Calcular Inversa");
-        btnCalcular.setBounds(780, 991, 200, 25);
+        btnCalcular.setBounds(506, 682, 150, 25);
         btnCalcular.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -74,7 +74,7 @@ public class inversaMatriz extends JPanel {
         add(btnCalcular);
 
         JButton btnAns = new JButton("Ans");
-        btnAns.setBounds(1000, 991, 200, 25);
+        btnAns.setBounds(661, 682, 141, 25);
         btnAns.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 txtAns.setText(ultimoResultado);
@@ -83,12 +83,12 @@ public class inversaMatriz extends JPanel {
         add(btnAns);
 
         txtAns = new JTextField();
-        txtAns.setBounds(1220, 991, 200, 25);
+        txtAns.setBounds(506, 718, 400, 25);
         txtAns.setEditable(false);
         add(txtAns);
 
         JButton btnVolver = new JButton("Volver");
-        btnVolver.setBounds(1440, 991, 200, 25);
+        btnVolver.setBounds(813, 682, 93, 25);
         btnVolver.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Container papa = getParent();

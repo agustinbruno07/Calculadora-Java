@@ -21,24 +21,24 @@ public class transpuestaMatriz extends JPanel {
 
         JLabel lblFilas = new JLabel("Filas:");
         lblFilas.setForeground(Color.WHITE);
-        lblFilas.setBounds(780, 110, 100, 25);
+        lblFilas.setBounds(474, 11, 100, 25);
         add(lblFilas);
 
         txtFilas = new JTextField();
-        txtFilas.setBounds(880, 110, 100, 25);
+        txtFilas.setBounds(574, 11, 100, 25);
         add(txtFilas);
 
         JLabel lblColumnas = new JLabel("Columnas:");
         lblColumnas.setForeground(Color.WHITE);
-        lblColumnas.setBounds(780, 150, 100, 25);
+        lblColumnas.setBounds(474, 51, 100, 25);
         add(lblColumnas);
 
         txtColumnas = new JTextField();
-        txtColumnas.setBounds(880, 150, 100, 25);
+        txtColumnas.setBounds(574, 51, 100, 25);
         add(txtColumnas);
 
         JButton btnGenerar = new JButton("Generar Matriz");
-        btnGenerar.setBounds(780, 190, 200, 25);
+        btnGenerar.setBounds(474, 91, 200, 25);
         btnGenerar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 generarCampos();
@@ -48,26 +48,26 @@ public class transpuestaMatriz extends JPanel {
 
         JLabel lblMatrizOriginal = new JLabel("Matriz Original:");
         lblMatrizOriginal.setForeground(Color.WHITE);
-        lblMatrizOriginal.setBounds(630, 226, 200, 25);
+        lblMatrizOriginal.setBounds(474, 110, 200, 25);
         add(lblMatrizOriginal);
 
         panelMatrizOriginal = new JPanel();
         panelMatrizOriginal.setLayout(null);
-        panelMatrizOriginal.setBounds(780, 230, 400, 200);
+        panelMatrizOriginal.setBounds(474, 131, 400, 200);
         add(panelMatrizOriginal);
 
         JLabel lblMatrizTranspuesta = new JLabel("Matriz Transpuesta:");
         lblMatrizTranspuesta.setForeground(Color.WHITE);
-        lblMatrizTranspuesta.setBounds(630, 450, 200, 25);
+        lblMatrizTranspuesta.setBounds(474, 326, 200, 25);
         add(lblMatrizTranspuesta);
 
         panelMatrizTranspuesta = new JPanel();
         panelMatrizTranspuesta.setLayout(null);
-        panelMatrizTranspuesta.setBounds(780, 450, 400, 200);
+        panelMatrizTranspuesta.setBounds(474, 351, 400, 200);
         add(panelMatrizTranspuesta);
 
         JButton btnCalcular = new JButton("Calcular Transpuesta");
-        btnCalcular.setBounds(780, 670, 200, 25);
+        btnCalcular.setBounds(474, 571, 174, 25);
         btnCalcular.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 calcularTranspuesta();
@@ -76,7 +76,7 @@ public class transpuestaMatriz extends JPanel {
         add(btnCalcular);
 
         JButton btnAns = new JButton("Ans");
-        btnAns.setBounds(780, 710, 200, 25);
+        btnAns.setBounds(653, 571, 108, 25);
         btnAns.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 txtAns.setText(ultimoResultado);
@@ -85,12 +85,12 @@ public class transpuestaMatriz extends JPanel {
         add(btnAns);
 
         txtAns = new JTextField();
-        txtAns.setBounds(1000, 710, 200, 25);
+        txtAns.setBounds(474, 606, 400, 25);
         txtAns.setEditable(false);
         add(txtAns);
 
         JButton btnVolver = new JButton("Volver");
-        btnVolver.setBounds(780, 750, 200, 25);
+        btnVolver.setBounds(771, 571, 103, 25);
         btnVolver.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Container parent = getParent();

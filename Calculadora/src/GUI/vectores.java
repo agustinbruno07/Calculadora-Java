@@ -172,7 +172,7 @@ public class vectores extends JPanel {
 			camposB.clear();
 			 
 			JLabel lblVectorA = new JLabel("Vector A:");
-	        lblVectorA.setForeground(Color.BLACK);
+	        lblVectorA.setForeground(Color.WHITE);
 	        lblVectorA.setBounds(20, 10, 100, 20);
 	        panelCampos.add(lblVectorA);
 			for (int i = 0; i < tam1; i++) {
@@ -182,7 +182,7 @@ public class vectores extends JPanel {
 			camposA.add(campoA);
 			}
 			JLabel lblVectorB = new JLabel("Vector B:");
-	        lblVectorB.setForeground(Color.BLACK);
+	        lblVectorB.setForeground(Color.WHITE);
 	        lblVectorB.setBounds(20, 70, 100, 20);
 	        panelCampos.add(lblVectorB);
 			for(int i = 0; i< tam1; i++) {

@@ -28,24 +28,24 @@ public class restaMatrices extends JPanel {
 
         JLabel lblFilas = new JLabel("Filas:");
         lblFilas.setForeground(java.awt.Color.WHITE);
-        lblFilas.setBounds(779, 72, 100, 25);
+        lblFilas.setBounds(428, 11, 100, 25);
         add(lblFilas);
 
         txtFilas = new JTextField();
-        txtFilas.setBounds(879, 72, 100, 25);
+        txtFilas.setBounds(528, 11, 100, 25);
         add(txtFilas);
 
         JLabel lblColumnas = new JLabel("Columnas:");
         lblColumnas.setForeground(java.awt.Color.WHITE);
-        lblColumnas.setBounds(779, 122, 100, 25);
+        lblColumnas.setBounds(428, 61, 100, 25);
         add(lblColumnas);
 
         txtColumnas = new JTextField();
-        txtColumnas.setBounds(879, 122, 100, 25);
+        txtColumnas.setBounds(528, 61, 100, 25);
         add(txtColumnas);
 
         JButton btnGenerar = new JButton("Generar Matrices");
-        btnGenerar.setBounds(779, 172, 200, 25);
+        btnGenerar.setBounds(428, 111, 200, 25);
         btnGenerar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 generarCampos();
@@ -56,38 +56,32 @@ public class restaMatrices extends JPanel {
         // Etiqueta para Matriz A
         JLabel lblMatrizA = new JLabel("Matriz A");
         lblMatrizA.setForeground(java.awt.Color.WHITE);
-        lblMatrizA.setBounds(1190, 222, 100, 25);
+        lblMatrizA.setBounds(428, 134, 100, 25);
         add(lblMatrizA);
 
         panelMatriz1 = new JPanel();
         panelMatriz1.setLayout(null);
-        panelMatriz1.setBounds(779, 222, 400, 200);
+        panelMatriz1.setBounds(428, 161, 400, 200);
         add(panelMatriz1);
 
         // Etiqueta para Matriz B
         JLabel lblMatrizB = new JLabel("Matriz B");
         lblMatrizB.setForeground(java.awt.Color.WHITE);
-        lblMatrizB.setBounds(1190, 432, 100, 25);
+        lblMatrizB.setBounds(779, 406, 100, 25);
         add(lblMatrizB);
 
         panelMatriz2 = new JPanel();
         panelMatriz2.setLayout(null);
-        panelMatriz2.setBounds(779, 432, 400, 200);
+        panelMatriz2.setBounds(428, 392, 400, 200);
         add(panelMatriz2);
-
-        // Etiqueta para Resultado
-        JLabel lblResultado = new JLabel("Resultado");
-        lblResultado.setForeground(java.awt.Color.WHITE);
-        lblResultado.setBounds(1190, 642, 100, 25);
-        add(lblResultado);
 
         panelResultado = new JPanel();
         panelResultado.setLayout(null);
-        panelResultado.setBounds(779, 642, 400, 200);
+        panelResultado.setBounds(842, 161, 400, 200);
         add(panelResultado);
 
         JButton btnRestar = new JButton("Restar");
-        btnRestar.setBounds(779, 872, 200, 25);
+        btnRestar.setBounds(428, 603, 200, 25);
         btnRestar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 restarMatrices();
@@ -103,11 +97,11 @@ public class restaMatrices extends JPanel {
                 cardlayout.show(papa, "panelMatrices");
             }
         });
-        btnVolver.setBounds(1100, 872, 89, 23);
+        btnVolver.setBounds(736, 603, 89, 23);
         add(btnVolver);
 
         JButton btnAns = new JButton("Ans");
-        btnAns.setBounds(1000, 872, 89, 23);
+        btnAns.setBounds(637, 604, 89, 23);
         btnAns.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 txtAns.setText(ultimoResultado);
@@ -116,9 +110,15 @@ public class restaMatrices extends JPanel {
         add(btnAns);
 
         txtAns = new JTextField();
-        txtAns.setBounds(779, 922, 400, 25);
+        txtAns.setBounds(428, 639, 400, 25);
         txtAns.setEditable(false);
         add(txtAns);
+        
+                // Etiqueta para Resultado
+                JLabel lblResultado = new JLabel("Resultado");
+                lblResultado.setBounds(842, 134, 100, 25);
+                add(lblResultado);
+                lblResultado.setForeground(java.awt.Color.WHITE);
     }
 
     private void generarCampos() {

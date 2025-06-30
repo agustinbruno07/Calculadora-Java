@@ -60,7 +60,7 @@ public class matrices extends JPanel {
         
         
 		JButton btnVolver = new JButton("volver");
-		btnVolver.setBounds(1088, 610, 89, 23);
+		btnVolver.setBounds(819, 532, 89, 23);
 		btnVolver.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent e) {
 		    	    Container papa = getParent(); 
@@ -71,49 +71,49 @@ public class matrices extends JPanel {
 		panelMatrices.add(btnVolver);
 
         JButton btnSuma = new JButton("Suma de matrices");
-        btnSuma.setBounds(867, 299, 207, 23);
+        btnSuma.setBounds(561, 252, 207, 23);
         btnSuma.addActionListener(e -> cardLayout.show(cardPanel, "panelSuma"));
         panelMatrices.add(btnSuma);
 
         JButton btnResta = new JButton("Resta de matrices");
-        btnResta.setBounds(867, 333, 207, 23);
+        btnResta.setBounds(561, 286, 207, 23);
         btnResta.addActionListener(e -> cardLayout.show(cardPanel, "restaMatrices"));
         panelMatrices.add(btnResta);
 
         JButton btnMult = new JButton("Multiplicacion de matrices");
-        btnMult.setBounds(867, 401, 207, 23);
+        btnMult.setBounds(561, 354, 207, 23);
         btnMult.addActionListener(e -> cardLayout.show(cardPanel, "multiplicacionMatrices"));
         panelMatrices.add(btnMult);
 
         JButton btnDeterminante = new JButton("Determinante de matriz");
-        btnDeterminante.setBounds(867, 435, 207, 23);
+        btnDeterminante.setBounds(561, 388, 207, 23);
         btnDeterminante.addActionListener(e -> cardLayout.show(cardPanel, "determinanteMatriz"));
         panelMatrices.add(btnDeterminante);
 
         JButton btnEscalar = new JButton("Multiplicar matriz por escalar");
-        btnEscalar.setBounds(867, 367, 207, 23);
+        btnEscalar.setBounds(561, 320, 207, 23);
         btnEscalar.addActionListener(e -> cardLayout.show(cardPanel, "multiplicacionEscalar"));
         panelMatrices.add(btnEscalar);
 
         JButton btnInversa = new JButton("Inversa de una matriz");
-        btnInversa.setBounds(867, 503, 207, 23);
+        btnInversa.setBounds(561, 456, 207, 23);
         btnInversa.addActionListener(e -> cardLayout.show(cardPanel, "inversaMatriz"));
         panelMatrices.add(btnInversa);
 
         JButton btnDiv = new JButton("Division de matrices");
-        btnDiv.setBounds(867, 537, 207, 23);
+        btnDiv.setBounds(561, 490, 207, 23);
         btnDiv.addActionListener(e -> cardLayout.show(cardPanel, "divisionMatrices"));
         panelMatrices.add(btnDiv);
 
         JButton btnTranspuesta = new JButton("Transpuesta de una matriz");
-        btnTranspuesta.setBounds(867, 469, 207, 23);
+        btnTranspuesta.setBounds(561, 422, 207, 23);
         btnTranspuesta.addActionListener(e -> cardLayout.show(cardPanel, "transpuestaMatriz"));
         panelMatrices.add(btnTranspuesta);
 
         JLabel opciones = new JLabel("Con que opcion queres trabajar?");
         opciones.setForeground(Color.WHITE);
         opciones.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        opciones.setBounds(858, 257, 243, 31);
+        opciones.setBounds(552, 210, 243, 31);
         panelMatrices.add(opciones);
     }
 }

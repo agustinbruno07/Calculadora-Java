@@ -26,24 +26,24 @@ public class sumaMatrices extends JPanel {
 
         JLabel lblFilas = new JLabel("Filas:");
         lblFilas.setForeground(java.awt.Color.WHITE);
-        lblFilas.setBounds(780, 76, 100, 25);
+        lblFilas.setBounds(471, 11, 100, 25);
         add(lblFilas);
 
         txtFilas = new JTextField();
-        txtFilas.setBounds(880, 76, 100, 25);
+        txtFilas.setBounds(544, 11, 100, 25);
         add(txtFilas);
 
         JLabel lblColumnas = new JLabel("Columnas:");
         lblColumnas.setForeground(java.awt.Color.WHITE);
-        lblColumnas.setBounds(780, 126, 100, 25);
+        lblColumnas.setBounds(471, 47, 100, 25);
         add(lblColumnas);
 
         txtColumnas = new JTextField();
-        txtColumnas.setBounds(880, 126, 100, 25);
+        txtColumnas.setBounds(544, 47, 100, 25);
         add(txtColumnas);
 
         JButton btnGenerar = new JButton("Generar Matrices");
-        btnGenerar.setBounds(780, 176, 200, 25);
+        btnGenerar.setBounds(471, 83, 200, 25);
         btnGenerar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 generarCampos();
@@ -54,36 +54,36 @@ public class sumaMatrices extends JPanel {
 
         JLabel lblMatrizA = new JLabel("Matriz A");
         lblMatrizA.setForeground(java.awt.Color.WHITE);
-        lblMatrizA.setBounds(1190, 226, 100, 25);
+        lblMatrizA.setBounds(471, 119, 100, 25);
         add(lblMatrizA);
 
         panelMatriz1 = new JPanel();
         panelMatriz1.setLayout(null);
-        panelMatriz1.setBounds(780, 226, 400, 200);
+        panelMatriz1.setBounds(471, 143, 400, 200);
         add(panelMatriz1);
 
         JLabel lblMatrizB = new JLabel("Matriz B");
         lblMatrizB.setForeground(java.awt.Color.WHITE);
-        lblMatrizB.setBounds(1190, 436, 100, 25);
+        lblMatrizB.setBounds(471, 354, 100, 25);
         add(lblMatrizB);
 
         panelMatriz2 = new JPanel();
         panelMatriz2.setLayout(null);
-        panelMatriz2.setBounds(780, 436, 400, 200);
+        panelMatriz2.setBounds(471, 374, 400, 200);
         add(panelMatriz2);
 
         JLabel lblResultado = new JLabel("Resultado");
         lblResultado.setForeground(java.awt.Color.WHITE);
-        lblResultado.setBounds(1190, 646, 100, 25);
+        lblResultado.setBounds(881, 119, 100, 25);
         add(lblResultado);
 
         panelResultado = new JPanel();
         panelResultado.setLayout(null);
-        panelResultado.setBounds(780, 646, 400, 200);
+        panelResultado.setBounds(881, 143, 400, 200);
         add(panelResultado);
 
         JButton btnSumar = new JButton("Sumar");
-        btnSumar.setBounds(780, 876, 200, 25);
+        btnSumar.setBounds(471, 585, 200, 25);
         btnSumar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 sumarMatrices();
@@ -99,11 +99,11 @@ public class sumaMatrices extends JPanel {
                 cardlayout.show(papa, "panelMatrices");
             }
         });
-        btnVolver.setBounds(1101, 876, 89, 23);
+        btnVolver.setBounds(780, 585, 89, 23);
         add(btnVolver);
 
         JButton btnAns = new JButton("Ans");
-        btnAns.setBounds(1001, 876, 89, 23);
+        btnAns.setBounds(681, 585, 89, 23);
         btnAns.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 txtAns.setText(ultimoResultado);
@@ -112,7 +112,7 @@ public class sumaMatrices extends JPanel {
         add(btnAns);
 
         txtAns = new JTextField();
-        txtAns.setBounds(780, 926, 400, 25);
+        txtAns.setBounds(471, 621, 400, 25);
         txtAns.setEditable(false);
         add(txtAns);
     }

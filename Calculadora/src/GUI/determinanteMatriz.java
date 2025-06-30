@@ -20,15 +20,15 @@ public class determinanteMatriz extends JPanel {
 
         JLabel lblDimension = new JLabel("Dimensión (n x n):");
         lblDimension.setForeground(Color.WHITE);
-        lblDimension.setBounds(780, 172, 150, 25);
+        lblDimension.setBounds(472, 11, 150, 25);
         add(lblDimension);
 
         txtDimension = new JTextField();
-        txtDimension.setBounds(930, 172, 100, 25);
+        txtDimension.setBounds(622, 11, 100, 25);
         add(txtDimension);
 
         JButton btnGenerar = new JButton("Generar Matriz");
-        btnGenerar.setBounds(780, 222, 200, 25);
+        btnGenerar.setBounds(472, 49, 200, 25);
         btnGenerar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 generarCampos();
@@ -38,11 +38,11 @@ public class determinanteMatriz extends JPanel {
 
         panelMatriz = new JPanel();
         panelMatriz.setLayout(null);
-        panelMatriz.setBounds(780, 272, 400, 400);
+        panelMatriz.setBounds(472, 85, 400, 294);
         add(panelMatriz);
 
         JButton btnCalcular = new JButton("Calcular Determinante");
-        btnCalcular.setBounds(780, 692, 200, 25);
+        btnCalcular.setBounds(472, 400, 169, 25);
         btnCalcular.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 calcularDeterminante();
@@ -52,11 +52,11 @@ public class determinanteMatriz extends JPanel {
 
         lblResultado = new JLabel("Resultado: ");
         lblResultado.setForeground(Color.WHITE);
-        lblResultado.setBounds(780, 732, 400, 25);
+        lblResultado.setBounds(472, 472, 400, 25);
         add(lblResultado);
 
         JButton btnAns = new JButton("Ans");
-        btnAns.setBounds(780, 772, 200, 25);
+        btnAns.setBounds(662, 400, 87, 25);
         btnAns.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 txtAns.setText(ultimoResultado);
@@ -65,12 +65,12 @@ public class determinanteMatriz extends JPanel {
         add(btnAns);
 
         txtAns = new JTextField();
-        txtAns.setBounds(1000, 772, 200, 25);
+        txtAns.setBounds(472, 436, 400, 25);
         txtAns.setEditable(false);
         add(txtAns);
 
         JButton btnVolver = new JButton("Volver");
-        btnVolver.setBounds(1030, 692, 200, 25);
+        btnVolver.setBounds(759, 400, 113, 25);
         btnVolver.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Container parent = getParent();

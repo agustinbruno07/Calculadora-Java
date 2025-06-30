@@ -22,33 +22,33 @@ public class multiplicacionEscalar extends JPanel {
 
         JLabel lblFilas = new JLabel("Filas:");
         lblFilas.setForeground(Color.WHITE);
-        lblFilas.setBounds(782, 120, 100, 25);
+        lblFilas.setBounds(430, 11, 100, 25);
         add(lblFilas);
 
         txtFilas = new JTextField();
-        txtFilas.setBounds(882, 120, 100, 25);
+        txtFilas.setBounds(507, 11, 100, 25);
         add(txtFilas);
 
         JLabel lblColumnas = new JLabel("Columnas:");
         lblColumnas.setForeground(Color.WHITE);
-        lblColumnas.setBounds(782, 170, 100, 25);
+        lblColumnas.setBounds(430, 47, 100, 25);
         add(lblColumnas);
 
         txtColumnas = new JTextField();
-        txtColumnas.setBounds(882, 170, 100, 25);
+        txtColumnas.setBounds(507, 47, 100, 25);
         add(txtColumnas);
 
         JLabel lblEscalar = new JLabel("Escalar:");
         lblEscalar.setForeground(Color.WHITE);
-        lblEscalar.setBounds(782, 220, 100, 25);
+        lblEscalar.setBounds(430, 83, 100, 25);
         add(lblEscalar);
 
         txtEscalar = new JTextField();
-        txtEscalar.setBounds(882, 220, 100, 25);
+        txtEscalar.setBounds(507, 83, 100, 25);
         add(txtEscalar);
 
         JButton btnGenerar = new JButton("Generar Matriz");
-        btnGenerar.setBounds(782, 270, 200, 25);
+        btnGenerar.setBounds(421, 119, 200, 25);
         btnGenerar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 generarCampos();
@@ -56,28 +56,28 @@ public class multiplicacionEscalar extends JPanel {
         });
         add(btnGenerar);
 
-        JLabel lblMatriz = new JLabel("Matriz");
+        JLabel lblMatriz = new JLabel("Matriz ");
         lblMatriz.setForeground(Color.WHITE);
-        lblMatriz.setBounds(1200, 320, 100, 25);
+        lblMatriz.setBounds(421, 155, 100, 25);
         add(lblMatriz);
 
         panelMatriz = new JPanel();
         panelMatriz.setLayout(null);
-        panelMatriz.setBounds(782, 320, 400, 200);
+        panelMatriz.setBounds(421, 177, 400, 200);
         add(panelMatriz);
 
         JLabel lblResultado = new JLabel("Resultado");
         lblResultado.setForeground(Color.WHITE);
-        lblResultado.setBounds(1200, 530, 100, 25);
+        lblResultado.setBounds(421, 385, 100, 25);
         add(lblResultado);
 
         panelResultado = new JPanel();
         panelResultado.setLayout(null);
-        panelResultado.setBounds(782, 530, 400, 200);
+        panelResultado.setBounds(421, 407, 400, 200);
         add(panelResultado);
 
         JButton btnMultiplicar = new JButton("Multiplicar");
-        btnMultiplicar.setBounds(782, 770, 200, 25);
+        btnMultiplicar.setBounds(421, 609, 151, 25);
         btnMultiplicar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 multiplicarPorEscalar();
@@ -86,7 +86,7 @@ public class multiplicacionEscalar extends JPanel {
         add(btnMultiplicar);
 
         JButton btnVolver = new JButton("Volver");
-        btnVolver.setBounds(1032, 770, 200, 25);
+        btnVolver.setBounds(705, 609, 100, 25);
         btnVolver.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Container papa = getParent();
@@ -97,7 +97,7 @@ public class multiplicacionEscalar extends JPanel {
         add(btnVolver);
 
         JButton btnAns = new JButton("Ans");
-        btnAns.setBounds(782, 820, 200, 25);
+        btnAns.setBounds(582, 609, 111, 25);
         btnAns.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 txtAns.setText(ultimoResultado);
@@ -106,7 +106,7 @@ public class multiplicacionEscalar extends JPanel {
         add(btnAns);
 
         txtAns = new JTextField();
-        txtAns.setBounds(782, 870, 400, 25);
+        txtAns.setBounds(421, 645, 400, 25);
         txtAns.setEditable(false);
         add(txtAns);
     }
