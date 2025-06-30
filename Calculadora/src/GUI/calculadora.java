@@ -382,6 +382,9 @@ public class calculadora extends JFrame implements ActionListener {
 	                    muestra_resultado = Float.toString((float) Math.pow(numero2, 1.0 / numero1));
 	                }
 	                break;
+	             case "Potencia":
+	            	muestra_resultado = Float.toString((float) Math.pow(numero1, numero2));
+	            	break;
 	            default:
 	                muestra_resultado = ingresarTexto.getText(); 
 	                break;
